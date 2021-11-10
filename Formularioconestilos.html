@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>POST</title>
+	<style>
+		label{
+			color: red;
+		}
+		td>input{
+			color: blue;
+		}
+		td>input+input+input{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<table border="1">
+		<form method="post" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+		<tr>
+				<th colspan="2">User Form</th>
+		</tr>
+		<tr>
+			<td><label for="nombre">Enter name</label></td>
+			<td><input type="text" id="nombre" name="nombre"></td>
+		</tr>
+		<tr>
+			<td><label for="password">Enter password</label></td>
+			<td><input type="password" id="password" name="password"></td>
+		</tr>
+		<tr>
+			<td><label for="direccion">Enter address</label></td>
+			<td><textarea id="direccion" name="direccion" rows="4" cols="26"></textarea></td>
+		</tr>
+		<tr>
+			<td>Select Game</td>
+			<td>
+				<input type="checkbox" id="Hockey" name="deportes[]" value="Hockey"><label for="Hockey">Hockey</label><br>
+				<input type="checkbox" id="Football" name="deportes[]" value="Football"><label for="Football">Football</label><br>
+				<input type="checkbox" id="Badminton" name="deportes[]" value="Badminton"><label for="Badminton">Badminton</label><br>
+				<input type="checkbox" id="Cricket" name="deportes[]" value="Cricket"><label for="Cricket">Cricket</label><br>
+				<input type="checkbox" id="Volleyball" name="deportes[]" value="Volleyball"><label for="Volleyball">Volleyball</label>
+			</td>
+		</tr>
+		<tr>
+			<td>Gender</td>
+			<td>
+				<input type="radio" name="sexo" id="Hombre" value="hombre"><label for="Hombre">Male</label>
+				<input type="radio" name="sexo" id="Mujer" value="Mujer"><label for="Mujer">Female</label>
+			</td>
+		</tr>
+		<tr>
+			<td><label for="edad">Select your age</label></td>
+			<td>
+				<select name="edad" id="edad">
+					<option value="menor de 18">menor de 18</option>
+					<option value="18">18</option>
+					<option value="mayor de 18">mayor de 18</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="file"></td>
+		</tr>
+		<tr>
+			<div>
+			<td colspan="2"><input type="button" value="click me"><input type="reset"><input type="submit"></td>
+			<div>
+		</tr>
+	</form>
+	</table>
+</body>
+</html>
